@@ -1,0 +1,93 @@
+.header-mobile-container{
+    background-color: black;
+    color: #fff;
+    font-family: "Roboto";
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header h1{
+    font-size: 20px;
+}
+
+.menu-icon{
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+.sidebar{
+    background-color: #000;
+    height: 100vh;
+    right: 0;
+    bottom: 0;
+    width: 150px;
+    top: 0;
+    margin-top: 40px;
+    position: absolute;
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    padding-top: 80px;
+    list-style-type: none;
+
+}
+
+.desktop-sidebar-container{
+    display: none;
+}
+
+.sidebar-close{
+    display: none;
+}
+
+.list-items{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.list-items p{
+    font-size: 15px;
+}
+
+.sidebar li:first-child{
+    font-weight: bold;
+}
+
+.sidebar-icons{
+    font-size: 20px;
+    margin-right: 7px;
+    font-weight: bold;
+}
+
+@media screen and (min-width:768px){
+    .desktop-sidebar-container{
+        display: block;
+        background-color: #000;
+        height: 140vh;
+        width: 10%;
+        color: #fff;
+    }
+    .header-mobile-container{
+        display: none;
+    }
+    .desktop-sidebar-container ul{
+        padding: 0px;
+    }
+    .desktop-sidebar-container h1{
+        font-size: 20px;
+        text-align: center;
+
+    }
+    .desktop-sidebar-container{
+        padding: 20px;
+    }
+    .desktop-sidebar-container ul li:first-child{
+        font-weight: bold;
+    }
+    
+}

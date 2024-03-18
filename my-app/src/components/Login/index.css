@@ -1,0 +1,144 @@
+
+
+.login-container{
+    background-color: #000;
+    height: 100vh;
+    padding: 30px 40px;
+    color: #fff;
+    font-family: "Roboto";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-container div h1{
+    text-align: center;
+}
+
+.login-details-container{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+.signin-btn-container{
+    display: flex;
+    justify-content: space-between;
+}
+.login-details-container h1{
+    color: #000;
+    font-size: 19px;
+}
+
+.signin-button{
+    height: 30px;
+    padding: 4px 7px;
+    border-radius: 6px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    font-weight: bold;
+}
+.icon{
+    font-size: 18px;
+   margin-right: 6px;
+   align-self: center;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.label-element{
+    color: #000;
+    margin-bottom: 4px;
+}
+
+.input-element{
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid #000;
+}
+
+.submit-btn{
+    background-color: #000;
+    color: #fff;
+    border: 0px;
+    height: 36px;
+    padding: 0px 10px;
+    border-radius: 6px;
+    margin-top: 6px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.register-text-container{
+    display: flex;
+    color: #000;
+    align-items: center;
+}
+
+.register-text-container p{
+    margin-right: 6px;
+}
+
+.nav-link{
+    text-decoration: none;
+}
+
+.banner-container{
+    display: none;
+}
+
+.main-heading{
+    text-align: center;
+}
+
+@media screen and (min-width:768px){
+    .login-container{
+        display: flex;
+        flex-direction: row;
+        background-color: #fff;
+        height: 100vh;
+    }
+
+    .banner-container{
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        background-color: #000;
+        height: 100vh;
+        
+    }
+
+    .login-details-container{
+        width: 60%;
+        height: 100vh;
+        background-color: #ffffff36;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-heading{
+        display: none;
+    }
+
+    .container1{
+        background-color: #fff;
+        width: 500px;
+        border: 1px solid #000;
+        padding: 10px 20px;
+        border-radius: 9px;
+    }
+}
