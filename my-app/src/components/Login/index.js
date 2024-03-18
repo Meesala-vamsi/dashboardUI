@@ -4,10 +4,9 @@ import {signInWithGoogle} from '../../Firebase'
 import { IoLogoApple } from "react-icons/io5";
 import {auth} from '../../Firebase'
 
-import {useNavigate,Navigate} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 
 import {NavLink} from 'react-router-dom'
-import Cookies from 'js-cookie'
 
 
 import {createUserWithEmailAndPassword} from 'firebase/auth'
@@ -16,7 +15,6 @@ import './index.css'
 
 const Login=()=>{
     const navigate = useNavigate()
-    const [loggedIn,setLoggedIn] = useState(false)
     const [loginUser,setLoginUser] = useState('')
     const [loginPassword,setLoginPassword]=useState('')
 

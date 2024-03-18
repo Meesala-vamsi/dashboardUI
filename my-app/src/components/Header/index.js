@@ -12,7 +12,7 @@ import './index.css'
 
 
 const Header=()=>{
-    const [menuStatus,setMenuStatus] = useState(false)
+    const [menuStatus,setMenuStatus] = useState(true)
 
     const onClickMenu=()=>{
         setMenuStatus(!menuStatus)

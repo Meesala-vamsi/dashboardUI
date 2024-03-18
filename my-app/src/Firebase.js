@@ -1,6 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import {GoogleAuthProvider, getAuth,signInWithPopup} from 'firebase/auth'
+import {useNavigate} from "react-router-dom"
 
 const firebaseConfig = {
   apiKey: "AIzaSyDUaI6pWtz6SwBkSXas7tDgiHXLyinFX0Y",
@@ -21,7 +22,8 @@ const provider = new GoogleAuthProvider()
 
 export const signInWithGoogle= ()=>{
     signInWithPopup(auth,provider).then((result)=>{
-        console.log(result)
+        useNavigate('/home')
+        
     }).catch((error)=>{
         console.log(error)
     })
